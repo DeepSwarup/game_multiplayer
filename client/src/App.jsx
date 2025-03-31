@@ -1,7 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:3000', { 
+// const socket = io('http://localhost:3000', { 
+//   autoConnect: true,
+//   transports: ['websocket', 'polling'],
+// });
+
+const socket = io('https://game-multiplayer-alpha.vercel.app/', { 
   autoConnect: true,
   transports: ['websocket', 'polling'],
 });
